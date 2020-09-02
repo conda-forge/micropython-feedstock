@@ -1,7 +1,7 @@
 {% set name = "micropython" %}
-{% set version = "1.12" %}
+{% set version = "1.13" %}
 {% set build = 0 %}
-{% set sha256 = "330cd32c7b67cb6b531d158eabcf68af3a7d7ad7b5a4b0ce3c73da3d241da6a2" %}
+{% set sha256 = "31466dacebeb3af60dc80a071a07c3e15b657219a826e0b6ac741f9f22472f23" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: {{ build }}
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
