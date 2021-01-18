@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -ex
+
 if [ `uname` != Darwin ]; then
     sed -i 's/gcc/\$\(GCC\)/g' $SRC_DIR/py/mkenv.mk
 fi
@@ -34,6 +38,7 @@ cd $SRC_DIR/ports/unix
 if [ `uname` != Darwin ]; then
     export LDFLAGS_EXTRA="-lrt"
 fi
-make -j${CPU_COUNT}
+sed -ie 's/-Werror//g' Makefile
+make -j${CPU_COUNT} V=1
 
 mv micropython $PREFIX/bin

@@ -5,9 +5,11 @@ Home: https://micropython.org
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/micropython-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python for microcontrollers
+
+Development: https://github.com/micropython/micropython
 
 MicroPython is a lean and efficient implementation of the Python 3
 programming language that includes a small subset of the Python standard
