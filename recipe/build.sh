@@ -18,7 +18,7 @@ library=(
     berkeley-db-1.xx
 )
 name=(
-    pfalcon
+    micropython
     atgreen
     pfalcon
 )
