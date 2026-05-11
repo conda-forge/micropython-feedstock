@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -exo pipefail
 
 export CFLAGS_EXTRA="$CFLAGS"
 
