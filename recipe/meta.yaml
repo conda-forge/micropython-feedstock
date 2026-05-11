@@ -20,11 +20,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
     - make
-    - wget
+    - pkgconfig
     - unzip
+    - wget
   host:
     - libffi
-    - pkgconfig
 
 test:
   commands:
