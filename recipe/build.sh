@@ -9,7 +9,6 @@ fi
 sed -i.bak 's/-Werror//g' $SRC_DIR/ports/unix/Makefile
 
 make -C ${SRC_DIR}/mpy-cross -j${CPU_COUNT} BUILD="${SRC_DIR}/mpy-cross/build"
-make -C ${SRC_DIR}/ports/unix submodules -j${CPU_COUNT} V=1 BUILD="${SRC_DIR}/ports/unix/build-standard"
 make -C ${SRC_DIR}/ports/unix -j${CPU_COUNT} V=1
 mkdir -p ${PREFIX}/bin/
 install -m 755 ${SRC_DIR}/ports/unix/build-standard/micropython ${PREFIX}/bin/
