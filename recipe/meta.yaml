@@ -1,14 +1,14 @@
 {% set name = "micropython" %}
-{% set version = "1.19.1" %}
+{% set version = "1.28.0" %}
 {% set build = 0 %}
-{% set sha256 = "c980ad7e742491df0dc10db2958137dbbf9aa7a8009e102fc75f4c0cac2d6b5e" %}
+{% set sha256 = "4e43c59657b8da33b4bc503509a827cc3ea6cb66c446475c57776cf4467ba215" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/micropython/micropython/archive/v{{ version }}.tar.gz
+  url:  https://github.com/micropython/micropython/releases/download/v{{ version }}/micropython-{{ version }}.tar.xz
   sha256: {{ sha256 }}
 
 build:
@@ -18,12 +18,11 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - make
-    - wget
-    - unzip
+    - pkgconfig
   host:
     - libffi
-    - pkgconfig
 
 test:
   commands:

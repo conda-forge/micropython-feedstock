@@ -4,3 +4,9 @@ github:
   tooling_branch_name: main
 conda_build:
   pkg_format: '2'
+provider:
+  linux_aarch64: default
+  osx_arm64: default
+test: native_and_emulated
+bot:
+  automerge: true
