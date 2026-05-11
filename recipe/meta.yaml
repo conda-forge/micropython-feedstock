@@ -21,8 +21,6 @@ requirements:
     - {{ stdlib('c') }}
     - make
     - pkgconfig
-    - unzip
-    - wget
   host:
     - libffi
 
