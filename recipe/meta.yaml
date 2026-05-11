@@ -18,9 +18,9 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
-    - make
-    - pkgconfig
-    - python *  # [win]
+    - make       # [unix]
+    - pkgconfig  # [unix]
+    - python *   # [win]
   host:
     - libffi  # [unix]
 
