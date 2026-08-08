@@ -15,7 +15,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libffi:
-- '3.5'
+- '3.7'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
