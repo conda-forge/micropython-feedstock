@@ -1,6 +1,6 @@
 {% set name = "micropython" %}
 {% set version = "1.28.0" %}
-{% set build = 1 %}
+{% set build = 2 %}
 {% set sha256 = "4e43c59657b8da33b4bc503509a827cc3ea6cb66c446475c57776cf4467ba215" %}
 
 package:
