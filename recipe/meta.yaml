@@ -1,14 +1,14 @@
 {% set name = "micropython" %}
-{% set version = "1.28.0" %}
-{% set build = 2 %}
-{% set sha256 = "4e43c59657b8da33b4bc503509a827cc3ea6cb66c446475c57776cf4467ba215" %}
+{% set version = "1.29.0" %}
+{% set build = 0 %}
+{% set sha256 = "d925a7c664e79a2bdf3dfcb285ba5e2237041cc35a0bd4ee573b6c5711efeca0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url:  https://github.com/micropython/micropython/releases/download/v{{ version }}/micropython-{{ version }}.tar.xz
+  url: https://github.com/micropython/micropython/releases/download/v{{ version }}/micropython-{{ version }}.tar.xz
   sha256: {{ sha256 }}
 
 build:
